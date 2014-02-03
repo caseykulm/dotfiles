@@ -1,3 +1,12 @@
-alias ls="ls -l --color"
+# Casey's bashrc
 
-export PS1="\W $ "
+# Natural fixes
+mkcd () {
+    mkdir -p "$*"
+    cd "$*"
+}
+
+# Aliases
+alias ls="ls -l --color"        # Change list command
+
+export PS1="\W $ " # Terminal prompt
