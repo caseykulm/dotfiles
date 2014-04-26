@@ -10,7 +10,8 @@ mkcd () {
     cd "$*"
 }
 
-# Aliases
+# Aliases & Functions
 alias ls="ls -l --color"        # Change list command
+prettycurl(){ curl -s "$@" | python -m json.tool; }
 
 export PS1="\W (ಠ_ಠ)$ " # Terminal prompt
