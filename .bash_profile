@@ -33,7 +33,7 @@ mkcd () {
 }
 
 # Aliases & Functions
-alias ls="ls -l"       # Change list command
+alias ls="ls -l"        # Change list command
 prettycurl(){ curl -s "$@" | python -m json.tool; }
 
 export PS1="\W (ಠ_ಠ)$ " # Terminal prompt
