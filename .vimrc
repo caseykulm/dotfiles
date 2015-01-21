@@ -1,4 +1,4 @@
-" Casey's vimrc file
+ " Casey's vimrc file
 
 set nocompatible                " be iMproved
 filetype off                    " required!
@@ -20,15 +20,17 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
-" My bundles here:
+" My plugins here:
 "
 " original repos on GitHub
-Bundle 'ervandew/supertab'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'mileszs/ack.vim'
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
-Bundle 'tpope/vim-fugitive'
+Plugin 'ervandew/supertab'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'mileszs/ack.vim'
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'bling/vim-airline'
+Plugin 'airblade/vim-gitgutter'
 
 filetype plugin indent on     " required!
 "
@@ -40,3 +42,6 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle commands are not allowed.
+
+set laststatus=2                " set vim-airline to always show
+
