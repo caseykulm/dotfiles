@@ -39,9 +39,6 @@ prettycurl() {
     curl -s "$@" | python -m json.tool
 }
 alias starwars="telnet towel.blinkenlights.nl"
-disneycurl() {
-    prettycurl -H 'client:DMA' -H 'language:en' -H 'country:us' "$@"
-}
 
 # NATURAL FIXES
 
