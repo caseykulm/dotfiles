@@ -6,6 +6,8 @@ set number                      " show line numbers
 set expandtab ts=4 sw=4 ai      " replace tabs with 4 spaces
 let &t_Co=256                   " turn on 256-bit colors
 syntax on                       " allow syntax highlighting
+set mouse=a
+set ttymouse=xterm
 inoremap jj <esc>" use kj to escape insert mode
 nnoremap <leader>w <C-w>v<C-w>l " split window vertically + jump to it
 nnoremap <C-J> <C-W><C-J>       " change to downward split window

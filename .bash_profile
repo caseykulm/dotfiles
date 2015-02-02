@@ -48,7 +48,8 @@ mkcd () {
     cd "$*"
 }
 
-alias ipplz="ifconfig en1 | grep \"inet \" | cut -d\  -f2"
+alias ipplz="{ ifconfig en0 && ifconfig en1; } | grep \"inet \" | cut -d\  -f2"
+alias ippubplz="curl ipinfo.io/ip"
 
 # PATH
 
