@@ -60,8 +60,8 @@ export ANDROID_PATH=$ANDROID_HOME:$ANDROID_PLATFORM_TOOLS:$ANDROID_TOOLS
 export GRADLE_HOME='/Users/chaoticuser/Programs/gradle-2.2.1/bin'
 export PATH=$PATH:$GRADLE_HOME:$ANDROID_PATH
 
-export JAVA_6='/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home'
-export JAVA_7='/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home'
-export JAVA_8='/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home'
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA6_HOME=$(/usr/libexec/java_home -v 1.6 -a x86_64)
+export JAVA7_HOME=$(/usr/libexec/java_home -v 1.7 -a x86_64)
+export JAVA8_HOME=$(/usr/libexec/java_home -v 1.8 -a x86_64)
+export JAVA_HOME=$JAVA8_HOME
 
