@@ -1,5 +1,6 @@
 source ~/dotfiles/git-completion.bash   # git completion
 source ~/.git-prompt.sh
+source ~/gradle-tab-completion.bash
 export PS1="\W λ\$(__git_ps1) "
 
 # GIT
@@ -39,6 +40,7 @@ prettycurl() {
     curl -s "$@" | python -m json.tool
 }
 alias starwars="telnet towel.blinkenlights.nl"
+alias mobilesize="find . \( -name \*.apk -o -name \*.ipa \) -print0 | xargs -0 du | sort -nr | cut -f2- | xargs du -hs"
 
 # NATURAL FIXES
 
@@ -63,5 +65,5 @@ export PATH=$PATH:$GRADLE_HOME:$ANDROID_PATH
 export JAVA6_HOME=$(/usr/libexec/java_home -v 1.6 -a x86_64)
 export JAVA7_HOME=$(/usr/libexec/java_home -v 1.7 -a x86_64)
 export JAVA8_HOME=$(/usr/libexec/java_home -v 1.8 -a x86_64)
-export JAVA_HOME=$JAVA8_HOME
+export JAVA_HOME=$JAVA7_HOME
 

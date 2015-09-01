@@ -32,6 +32,7 @@ Plugin 'mattn/gist-vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdcommenter'
 " vim colors here
 " Plugin 'altercation/vim-colors-solarized'
 Plugin 'daylerees/colour-schemes', { 'rtp': 'vim/' }
@@ -48,4 +49,5 @@ filetype plugin indent on     " required!
 " NOTE: comments after Bundle commands are not allowed.
 
 set laststatus=2                " set vim-airline to always show
+filetype plugin on
 
