@@ -100,6 +100,11 @@ export JAVA_HOME=$JAVA7_HOME
 export ANDROID_HOME='/Library/programs/android-sdk'
 export ANDROID_PLATFORM_TOOLS="$ANDROID_HOME/platform-tools"
 export GRADLE_HOME='/users/chaoticuser/programs/gradle-2.2.1/bin'
-export PATH=$PATH:$ANDROID_HOME:$ANDROID_PLATFORM_TOOLS:$GRADLE_HOME
+
+export GOPATH=$HOME/Code/goworkspace
+export GOBIN=$GOPATH/bin
+export GOROOT=/usr/local/opt/go/libexec
+
+export PATH=$PATH:$ANDROID_HOME:$ANDROID_PLATFORM_TOOLS:$GRADLE_HOME:$GOPATH/bin:$GOROOT/bin
 
 
