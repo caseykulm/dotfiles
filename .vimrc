@@ -15,12 +15,12 @@ nnoremap <C-K> <C-W><C-K>       " change to upward split window
 nnoremap <C-L> <C-W><C-L>       " change to right split window
 nnoremap <C-H> <C-W><C-H>       " change to left split window
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " My plugins here:
 "
@@ -37,6 +37,7 @@ Plugin 'scrooloose/nerdcommenter'
 " Plugin 'altercation/vim-colors-solarized'
 Plugin 'daylerees/colour-schemes', { 'rtp': 'vim/' }
 
+call vundle#end()
 filetype plugin indent on     " required!
 "
 " Brief help
