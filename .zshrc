@@ -5,7 +5,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="avit"
 
 ZSH_TMUX_AUTOSTART="true"
 
@@ -92,19 +93,14 @@ prettycurl() {
     curl -s "$@" | python -m json.tool
 }
 
-export JAVA6_HOME=$(/usr/libexec/java_home -v 1.6 -a x86_64)
+# export JAVA6_HOME=$(/usr/libexec/java_home -v 1.6 -a x86_64)
 export JAVA7_HOME=$(/usr/libexec/java_home -v 1.7 -a x86_64)
 export JAVA8_HOME=$(/usr/libexec/java_home -v 1.8 -a x86_64)
 export JAVA_HOME=$JAVA7_HOME
 
-export ANDROID_HOME='/Library/programs/android-sdk'
+export ANDROID_HOME="$USER/Library/Android/sdk"
 export ANDROID_PLATFORM_TOOLS="$ANDROID_HOME/platform-tools"
-export GRADLE_HOME='/users/chaoticuser/programs/gradle-2.2.1/bin'
-
-export GOPATH=$HOME/Code/goworkspace
-export GOBIN=$GOPATH/bin
-export GOROOT=/usr/local/opt/go/libexec
-
-export PATH=$PATH:$ANDROID_HOME:$ANDROID_PLATFORM_TOOLS:$GRADLE_HOME:$GOPATH/bin:$GOROOT/bin
+export GRADLE_HOME="$USER/Programs/gradle-2.9"
+export PATH=$PATH:$ANDROID_HOME:$ANDROID_PLATFORM_TOOLS:$GRADLE_HOME
 
 
