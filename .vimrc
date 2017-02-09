@@ -33,6 +33,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'toyamarinyon/vim-swift'
 " vim colors here
 " Plugin 'altercation/vim-colors-solarized'
 Plugin 'daylerees/colour-schemes', { 'rtp': 'vim/' }
