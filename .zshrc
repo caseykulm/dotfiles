@@ -8,6 +8,21 @@ source $ZSH/oh-my-zsh.sh
 
 # eval "$(rbenv init -)"
 
+# run_setup_scripts() {
+#   $SETUP_SCRIPT_PATH=$HOME/dotfiles/$1/
+#
+# }
+#
+# # OS Specific setup
+# case "$OSTYPE" in
+#   darwin*)  run_setup_scripts('mac-scripts') ;;
+#   linux*)   run_setup_scripts('linux-scripts') ;;
+#   *)        echo "unknown: $OSTYPE" ;;
+# esac
+
+# Source mac-setup scripts
+source $HOME/dotfiles/$SETUP_SCRIPT_PATH/hide_alive.sh
+
 alias mobilesize="find . \( -name \*.apk -o -name \*.ipa \) -print0 | xargs -0 du | sort -nr | cut -f2- | xargs du -hs"
 alias ipplz="{ ifconfig en0 && ifconfig en1; } | grep \"inet \" | cut -d\  -f2"
 alias ippubplz="curl ipinfo.io/ip"

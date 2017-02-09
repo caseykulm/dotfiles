@@ -1,10 +1,7 @@
 #! /bin/bash
 
-fun_open_chrome_black() {
-  open -a /Applications/Google\ Chrome.app http://www.e-try.com/black.htm
-}
-
-fun_fullscreen_in_chrome() {
+ocfb() {
+  # open Chrome in fullscreen
   /usr/bin/osascript \
   -e "tell application \"Google Chrome\"" \
   -e "activate" \
@@ -16,11 +13,7 @@ fun_fullscreen_in_chrome() {
   -e "keystroke \"l\" using {command down}" \
   -e "end tell" \
   -e "end tell"
-}
 
-fun_open_chrome_full_black() {
-  fun_fullscreen_in_chrome
-  fun_open_chrome_black
+  # open a fully black webpage
+  open -a /Applications/Google\ Chrome.app http://www.e-try.com/black.htm
 }
-
-alias ocfb=fun_open_chrome_full_black
