@@ -3,13 +3,13 @@
 # symbolic link for .zshrc
 link_input_file() {
   INPUT_FILE=$1
-  if [ -f "~/$INPUT_FILE" ]
+  if [ -f "$HOME/INPUT_FILE" ]
   then
-    cp ~/$INPUT_FILE ~/$INPUT_FILE.backup
-    echo "Created a backup at ~/$INPUT_FILE.backup"
-    rm ~/$INPUT_FILE
+    cp $HOME/$INPUT_FILE $HOME/$INPUT_FILE.backup
+    echo "Created a backup at $HOME/$INPUT_FILE.backup"
+    rm $HOME/$INPUT_FILE
   fi
-  ln -s ~/dotfiles/$INPUT_FILE ~/$INPUT_FILE
+  ln -s $HOME/dotfiles/$INPUT_FILE $HOME/$INPUT_FILE
 }
 
 handle_file_exists() {
@@ -24,7 +24,7 @@ handle_file_exists() {
 
 setup_file_locally() {
   INPUT_FILE=$1
-  if [ -f "~/$INPUT_FILE" ]
+  if [ -f "$HOME/$INPUT_FILE" ]
   then
     handle_file_exists $INPUT_FILE
   else
@@ -33,10 +33,10 @@ setup_file_locally() {
 }
 
 setup_file_locally ".zshrc"
-source ~/.zshrc
+source $HOME/.zshrc
 
 setup_file_locally ".vimrc"
 
 setup_file_locally ".tmux.conf"
-tmux source ~/.tmux.conf
+tmux source $HOME/.tmux.conf
 
