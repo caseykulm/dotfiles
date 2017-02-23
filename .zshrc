@@ -36,7 +36,7 @@ chrome() {
   open -a "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" "$1"
 }
 bvsdk() {
-  python $HOME/dotfiles/mac-scripts/latest_bvsdk.py
+  python $HOME/dotfiles/mac/latest_bvsdk.py
 }
 
 # export JAVA6_HOME=$(/usr/libexec/java_home -v 1.6 -a x86_64)
