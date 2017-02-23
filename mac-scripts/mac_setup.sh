@@ -33,6 +33,10 @@ setup_file_locally() {
 }
 
 setup_file_locally ".zshrc"
+source ~/.zshrc
+
 setup_file_locally ".vimrc"
+
 setup_file_locally ".tmux.conf"
+tmux source ~/.tmux.conf
 
