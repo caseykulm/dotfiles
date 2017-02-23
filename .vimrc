@@ -2,7 +2,7 @@
 
 set nocompatible                " be iMproved
 filetype off                    " required!
-set number                      " show line numbers
+set nonumber                    " don't show line numbers
 set expandtab ts=4 sw=4 ai      " replace tabs with 4 spaces
 let &t_Co=256                   " turn on 256-bit colors
 syntax on                       " allow syntax highlighting
