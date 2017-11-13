@@ -37,6 +37,8 @@ Plugin 'toyamarinyon/vim-swift'
 " vim colors here
 " Plugin 'altercation/vim-colors-solarized'
 Plugin 'daylerees/colour-schemes', { 'rtp': 'vim/' }
+Plugin 'lambdatoast/elm.vim'
+Plugin 'udalov/kotlin-vim'
 
 call vundle#end()
 filetype plugin indent on     " required!

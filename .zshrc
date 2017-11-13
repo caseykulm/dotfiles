@@ -5,6 +5,7 @@ ZSH_TMUX_AUTOSTART="true"
 plugins=(git colored-man colorize github jira brew osx zsh-syntax-highlighting tmux)
 
 source $ZSH/oh-my-zsh.sh
+source "/Users/casey.kulm/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 
 # eval "$(rbenv init -)"
 
@@ -29,6 +30,7 @@ alias ipplz="{ ifconfig en0 && ifconfig en1; } | grep \"inet \" | cut -d\  -f2"
 alias ippubplz="curl ipinfo.io/ip"
 alias adbrestart="adb kill-server; adb start-server; adb devices"
 alias starwars="telnet towel.blinkenlights.nl"
+alias ducks='du -cks * | sort -rn | head'
 prettycurl() {
     curl -s "$@" | python -m json.tool
 }
