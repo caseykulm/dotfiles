@@ -5,7 +5,7 @@ ZSH_TMUX_AUTOSTART="true"
 plugins=(git colored-man colorize github jira brew osx zsh-syntax-highlighting tmux)
 
 source $ZSH/oh-my-zsh.sh
-source "/Users/casey.kulm/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+source "/Users/caseykulm/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 
 # eval "$(rbenv init -)"
 
