@@ -51,3 +51,7 @@ setup_file_locally ".vimrc"
 setup_file_locally ".tmux.conf"
 tmux source "$HOME/.tmux.conf"
 
+# Setup Vim Package installer via https://github.com/VundleVim/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+
