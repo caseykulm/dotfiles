@@ -3,6 +3,8 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="miloshadzic"
 ZSH_TMUX_AUTOSTART="true"
 plugins=(git colored-man colorize github jira brew osx zsh-syntax-highlighting tmux)
+# More zsh-esque git aliases
+alias gfp="git push --force-with-lease"
 
 source $ZSH/oh-my-zsh.sh
 source "$HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
@@ -25,6 +27,8 @@ fi
 # Source mac-setup scripts
 # source $HOME/dotfiles/$SETUP_SCRIPT_PATH/hide_alive.sh
 
+$HOME/dotfiles/external-sources.sh
+
 alias mobilesize="find . \( -name \*.apk -o -name \*.ipa \) -print0 | xargs -0 du | sort -nr | cut -f2- | xargs du -hs"
 alias ipplz="{ ifconfig en0 && ifconfig en1; } | grep \"inet \" | cut -d\  -f2"
 alias ippubplz="curl ipinfo.io/ip"
@@ -42,9 +46,9 @@ bvsdk() {
 }
 
 # export JAVA6_HOME=$(/usr/libexec/java_home -v 1.6 -a x86_64)
-export JAVA7_HOME=$(/usr/libexec/java_home -v 1.7 -a x86_64)
-export JAVA8_HOME=$(/usr/libexec/java_home -v 1.8 -a x86_64)
-export JAVA_HOME=$JAVA8_HOME
+# export JAVA7_HOME=$(/usr/libexec/java_home -v 1.7 -a x86_64)
+# export JAVA8_HOME=$(/usr/libexec/java_home -v 1.8 -a x86_64)
+# export JAVA_HOME=$JAVA8_HOME
 
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export ANDROID_SDK_ROOT="$ANDROID_HOME"
