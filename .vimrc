@@ -39,6 +39,7 @@ Plugin 'toyamarinyon/vim-swift'
 Plugin 'daylerees/colour-schemes', { 'rtp': 'vim/' }
 Plugin 'lambdatoast/elm.vim'
 Plugin 'udalov/kotlin-vim'
+Plugin 'leafgarland/typescript-vim'
 
 call vundle#end()
 filetype plugin indent on     " required!

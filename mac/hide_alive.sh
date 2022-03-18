@@ -1,6 +1,6 @@
 #! /bin/bash
 
-ocfb() {
+hide() {
   # open Chrome in fullscreen
   /usr/bin/osascript \
   -e "tell application \"Google Chrome\"" \
